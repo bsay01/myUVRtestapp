@@ -1,0 +1,73 @@
+:root {
+    border: 1px solid rgb(11, 0, 172);
+    border-radius: 4px;
+    padding: 16px;
+    --ion-background-color: var(--ion-color-primary);
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline solid black;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    border: 1px solid black;
+    padding: 4px;
+    width: 75%;
+}
+
+img {
+    border: 1px solid black;
+}
+
+section.textbox {
+    /* should start with an h2 header */
+    width: fit-content;
+    height: fit-content;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border: 1px solid black;
+}
+
+section.main {
+    width: auto;
+    height: fit-content;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+main {
+    width: auto;
+    height: fit-content;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+main > h1 {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}

@@ -1,7 +1,7 @@
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import React from 'react';
+import { IonApp, IonButton, IonCard, IonInput, IonText, IonTextarea } from '@ionic/react';
+
+import './api-interface.css';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -24,16 +24,36 @@ import './theme/variables.css';
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
+    <head>
+        <link rel="stylesheet" href="api-interface.css"></link>
+        <title>Test API Interface Website</title>
+    </head>
+
+    <body>
+
+        <h1>Test API Interface Website</h1>
+        <a href="">reload</a>
+
+        <section className='textbox'>
+            <h2>Links to other pages</h2>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">another page</a>
+        </section>
+
+        <main>
+            <h1>API Interface</h1>
+
+            <p>this is a paragraph</p>
+
+            <IonTextarea autoGrow={true} enterkeyhint="enter" name="insert text here" placeholder="type stuff!" rows={4}></IonTextarea>
+
+            <IonButton color='secondary'>Click me!</IonButton>
+            
+            <script src="index.js"></script>
+        </main>
+
+        <a href="">reload</a>
+
+    </body>
   </IonApp>
 );
 
